@@ -32,7 +32,7 @@
 
 // TIMER 
 
-var countDownDate = new Date("Apr 22, 2018 12:00:00").getTime();
+var countDownDate = new Date("Apr 21, 2018 12:00:00").getTime();
 
   var countDownFunction = setInterval(function() {
       var now = new Date().getTime();
