@@ -48,13 +48,22 @@ body  {
   background-image: url("assets/intro.png");
 }
 
+.leads-profiles {
+  background-color: green;
+}
+.leads-title {
+  color: white;
+  text-align: center;
+  font-size: 10em;
+  margin: 0 auto;
+}
 img {
   width: 200px;
   border-radius: 50%;
 }
 
 .profile {
-  width: 200px;
+  width: 500px;
   color: white;
 }
 .profile-name {
