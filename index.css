@@ -47,3 +47,21 @@ body  {
   background-position-x: center;
   background-image: url("assets/intro.png");
 }
+
+img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+.profile {
+  width: 200px;
+  color: white;
+}
+.profile-name {
+  text-align: center;
+  font-size: 20px;
+}
+
+.profile-des {
+  font-size: 2em;
+}
