@@ -5,10 +5,13 @@ particlesJS.load('particles-js', 'JS/particles.js/particles.json', function() {
 
 
 
-// TIMER 
+// TIMER
 
 var countDownDate = new Date("Apr 22, 2018 12:00:00").getTime();
-  var countDownFunction = setInterval(function() {
+
+  setInterval(function() {
+    var fireFrame = document.getElementById("fire").getAttribute("frame");
+
       var now = new Date().getTime();
 
       var distance = countDownDate - now;
@@ -22,4 +25,16 @@ var countDownDate = new Date("Apr 22, 2018 12:00:00").getTime();
       }
       document.getElementById("timer").innerHTML = hours + " HOURS - " + minutes + " MIN - " + seconds + " SEC";
 
-  },1000);
+      if (fireFrame == 1) {
+        document.getElementById("fire").src = "assets/fire2.png";
+        document.getElementById("fire").setAttribute("frame", 2);
+      }
+      else if (fireFrame == 2) {
+        document.getElementById("fire").src = "assets/fire3.png";
+        document.getElementById("fire").setAttribute("frame", 3);
+      }
+      else if (fireFrame == 3) {
+        document.getElementById("fire").src = "assets/fire.png";
+        document.getElementById("fire").setAttribute("frame", 1);
+      }
+  },500);
