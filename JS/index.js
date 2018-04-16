@@ -17,7 +17,9 @@ var countDownDate = new Date("Apr 22, 2018 12:00:00").getTime();
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+      if(days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
+        document.getElementById("timer").innerHTML = "0" + " HOURS - " + "0" + " MIN - " + "0" + " SEC";
+      }
       document.getElementById("timer").innerHTML = hours + " HOURS - " + minutes + " MIN - " + seconds + " SEC";
 
   },1000);

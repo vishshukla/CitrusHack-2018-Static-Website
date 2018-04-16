@@ -48,6 +48,10 @@ body  {
   background-image: url("assets/intro.png");
 }
 
+.button {
+  border: 1px solid white;
+}
+
 .leads-profiles {
   background-color: green;
 }
