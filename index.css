@@ -1,19 +1,26 @@
-*,
-*::before,
-*::after {
+* {
+  border: 0;
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
-
 body  {
   background-color: #000840 !important;
 }
 
+.calendar {
+  width: 85%;
+  margin: 0 auto;
+  color: white;
+  background-color: #0f1028;
+  border-radius: 10px;
+  border: 5px solid black;
+}
+
+.column {
+  text-align: center;
+}
 
 #timer {
   color: white;
-  border: 5px solid green;
   margin-top: 10%;
 }
 
