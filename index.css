@@ -19,6 +19,17 @@ body  {
   text-align: center;
 }
 
+.day {
+  text-align: center;
+  text-transform: uppercase;  
+}
+
+.event {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2%;
+}
+
 #timer {
   text-align: center;
   color: white;
