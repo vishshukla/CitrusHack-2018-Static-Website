@@ -1,7 +1,5 @@
 html {
   height: 100%;
-  margin: 0;
-  padding: 0;
 }
 body  {
   font-family: 'Lato', sans-serif;
@@ -13,6 +11,33 @@ canvas {
   position: absolute;
   top: 0;
   height: 250% !important;
+}
+
+form {
+  display: inline;
+}
+
+button {
+  z-index: 999;
+}
+
+hr {
+  width: 40%;
+  margin-bottom: 5%;
+}
+
+#timer {
+  padding: 5% 0;
+  text-align: center;
+  color: white;
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+
+.button-group {
+  text-align: center;
+  margin: 5% 0;
 }
 
 .calendar {
@@ -59,19 +84,21 @@ canvas {
   text-align: right;
 }
 
+.small.image>img {
+  filter: grayscale(100%);
+  width: 100%;
+}
+
+.segments {
+  width: 75% !important;
+  margin: 0 auto !important;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0,0,0,0.49) !important;
+}
+
 #fire {
   margin: 5% auto;
   display: block;
   width: 33%;
-}
-
-#timer {
-  padding: 10% 0;
-  text-align: center;
-  color: white;
-  font-size: 3.5em;
-  letter-spacing: 2px;
-  font-weight: 800;
 }
 
 #intro {
@@ -81,24 +108,61 @@ canvas {
   background-size: contain;
 }
 
+#speakers {
+  background-color: #441f2e;
+  padding: 10% 0;
+}
+
+#resources {
+  background-color: #eb7353;
+  padding: 10% 0;
+}
+
 .button {
   border: 1px solid white;
+}
+
+.hacking-time {
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.resource-title {
+  font-size: 2em;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.resource-main {
+  font-size: 1.25em;
+  font-weight: 700;
 }
 
 .leads-profiles {
   height: 100%;
 }
+
 .leads-title {
   color: white;
   text-align: center;
-  font-size: 10em;
-  margin: 10% auto;
+  font-size: 5em;
+  font-weight: 700;
+  margin: 5% auto;
 }
 
-img {
-  width: 200px;
-  border-radius: 5px;
-  margin: 0 auto;
+.title {
+  color: white;
+  font-size: 3em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+  font-weight: 800;
+}
+
+.ui.card {
+  margin: 0 auto !important;
 }
 
 .profile {
@@ -116,6 +180,7 @@ img {
 @media only screen and (max-width: 600px) {
     #timer {
       font-size: 1.2em;
+      font-weight: bolder;
     }
     canvas {
       height: 300% !important;

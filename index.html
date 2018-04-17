@@ -15,173 +15,321 @@
 
   <div id="intro">
     <div id="particles-js">
-        <div id="timer"></div>
-        <div class="calendar ui grid stackable">
-          <div class="column">
-            <div class="day">
-              Saturday
+
+      <div id="timer"></div>
+
+      <div class="button-group">
+
+        <form action="https://join.slack.com/t/citrus-hack-2018/shared_invite/enQtMzQ1NjExOTAxMTY5LTBiMjBhMTdiMjMyZDEwOWNmZDgwZjc1ZDI2NmU1ZTBiYzgzOGI0NmIxOTQwMjZhZGE5MmMxNTYwMjdhZjRjNzg" method="get">
+          <button class="ui labeled icon green button">
+              <i class="slack icon"></i>
+              Slack
+            </button>
+        </form>
+
+        <form action="https://devpost.com/" method="get">
+          <button class="ui labeled icon teal button">
+            <i class="code branch icon"></i>
+            Devpost
+          </button>
+        </form>
+
+        <form action="https://twitter.com/citrushack">
+          <button class="ui twitter button">
+            <i class="twitter icon"></i>
+            Twitter
+          </button>
+        </form>
+
+
+      </div>
+
+
+      <div class="calendar ui grid stackable">
+        <div class="column">
+          <div class="day">
+            Saturday
+            <hr>
+          </div>
+          <div class="schedule">
+            <div class="event">
+              <span class="event-name">Breakfast</span>
+              <span class="event-location">@ Bytes <br></span>
+              <span class="event-time">9:00am - 11:00am</span>
             </div>
-            <div class="schedule">
-              <div class="event">
-                <span class="event-name">Breakfast</span>
-                <span class="event-location">@ Bytes <br></span>
-                <span class="event-time">9:00am - 11:00am</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Opening Ceremony</span>
-                <span class="event-location">@ MSE 104 <br></span>
-                <span class="event-time">10:30am - 12:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Team Building Mixer</span>
-                <span class="event-location">@ WCH Patio <br></span>
-                <span class="event-time">12:00pm - 1:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Lunch</span>
-                <span class="event-location">@ Bytes <br></span>
-                <span class="event-time">12:30pm - 2:30 pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Intro to Git</span>
-                <span class="event-location">@ Bourns A125 <div class="ui orange horizontal label">GitHub</div> <br></span>
-                <span class="event-time">1:00pm - 2:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">1517 Mixer</span>
-                <span class="event-location">@ Patio <div class="ui orange horizontal label">1517</div><br></span>
-                <span class="event-time">2:00pm - 3:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Intro to Android Development</span>
-                <span class="event-location">@ WCH 143 <br></span>
-                <span class="event-time">3:00pm - 4:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Intro to Unity</span>
-                <span class="event-location">@ Bourns B118 <br></span>
-                <span class="event-time">3:00pm - 4:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Intro to React</span>
-                <span class="event-location">@ WCH 142 <br></span>
-                <span class="event-time">4:00pm - 5:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Smart Contracts</span>
-                <span class="event-location">@ Bourns A125 <br></span>
-                <span class="event-time">4:00pm - 5:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Data Science 101</span>
-                <span class="event-location">@ WCH 143 <br></span>
-                <span class="event-time">5:00pm - 6:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">iOS Development</span>
-                <span class="event-location">@ Bourns B118 <div class="ui orange horizontal label">Appcore Labs</div> <br></span>
-                <span class="event-time">6:00pm - 7:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Modern C++</span>
-                <span class="event-location">@ WCH 143 <br></span>
-                <span class="event-time">6:00pm - 7:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Dinner</span>
-                <span class="event-location">@ Bytes <br></span>
-                <span class="event-time">7:00pm - 9:00 pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Digital Transformation</span>
-                <span class="event-location">@ WCH 142 <div class="ui orange horizontal label">Deloitte</div><br></span>
-                <span class="event-time">8:00pm - 9:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Intro to Docker</span>
-                <span class="event-location">@ WCH 143 <br></span>
-                <span class="event-time">8:00pm - 9:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">MLH Cup Stacking Competition</span>
-                <span class="event-location">@ WCH 205/6 <br></span>
-                <span class="event-time">9:00pm - 10:00pm</span>
-              </div>
-              <div class="event">
-                <span class="event-name">Silicon Valley Showtime</span>
-                <span class="event-location">@ TBD <br></span>
-                <span class="event-time">10:30 pm</span>
-              </div>
+            <div class="event">
+              <span class="event-name">Opening Ceremony</span>
+              <span class="event-location">@ MSE 104 <br></span>
+              <span class="event-time">10:30am - 12:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name hacking-time">Hacking Begins</span>
+              <span class="event-location">@ WCH <br></span>
+              <span class="event-time">12:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Team Building Mixer</span>
+              <span class="event-location">@ WCH Patio <br></span>
+              <span class="event-time">12:00pm - 1:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Lunch</span>
+              <span class="event-location">@ Bytes <br></span>
+              <span class="event-time">12:30pm - 2:30 pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Intro to Git</span>
+              <span class="event-location">@ Bourns A125 <div class="ui orange horizontal label">GitHub</div> <br></span>
+              <span class="event-time">1:00pm - 2:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">1517 Mixer</span>
+              <span class="event-location">@ Patio <div class="ui orange horizontal label">1517</div><br></span>
+              <span class="event-time">2:00pm - 3:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Intro to Android Development</span>
+              <span class="event-location">@ WCH 143 <br></span>
+              <span class="event-time">3:00pm - 4:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Intro to Unity</span>
+              <span class="event-location">@ Bourns B118 <br></span>
+              <span class="event-time">3:00pm - 4:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Intro to React</span>
+              <span class="event-location">@ WCH 142 <br></span>
+              <span class="event-time">4:00pm - 5:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Smart Contracts</span>
+              <span class="event-location">@ Bourns A125 <br></span>
+              <span class="event-time">4:00pm - 5:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Data Science 101</span>
+              <span class="event-location">@ WCH 143 <br></span>
+              <span class="event-time">5:00pm - 6:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">iOS Development</span>
+              <span class="event-location">@ Bourns B118 <div class="ui orange horizontal label">Appcore Labs</div> <br></span>
+              <span class="event-time">6:00pm - 7:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Modern C++</span>
+              <span class="event-location">@ WCH 143 <br></span>
+              <span class="event-time">6:00pm - 7:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Dinner</span>
+              <span class="event-location">@ Bytes <br></span>
+              <span class="event-time">7:00pm - 9:00 pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Digital Transformation</span>
+              <span class="event-location">@ WCH 142 <div class="ui orange horizontal label">Deloitte</div><br></span>
+              <span class="event-time">8:00pm - 9:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Intro to Docker</span>
+              <span class="event-location">@ WCH 143 <br></span>
+              <span class="event-time">8:00pm - 9:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">MLH Cup Stacking Competition</span>
+              <span class="event-location">@ WCH 205/6 <br></span>
+              <span class="event-time">9:00pm - 10:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Silicon Valley Showtime</span>
+              <span class="event-location">@ TBD <br></span>
+              <span class="event-time">10:30 pm</span>
             </div>
           </div>
+        </div>
 
-          <div class="column">
-              <div class="day">Sunday</div>
-              <div class="schedule">
-                <div class="event">
-                  <span class="event-name">Midnight Snack :O </span>
-                  <span class="event-location">@ Bytes <br></span>
-                  <span class="event-time">12:00 am</span>
-                </div>
-                <div class="event">
-                  <span class="event-name">Overwatch Tournament</span>
-                  <span class="event-location">@ Bourns A265 <div class="ui orange horizontal label">Gigabyte</div> <br></span>
-                  <span class="event-time">12:30 - 2 am</span>
-                </div>
-                <div class="event">
-                  <span class="event-name">Swag Pinata</span>
-                  <span class="event-location">@ TBD <br></span>
-                  <span class="event-time">2:00 am</span>
-                </div>
-                <div class="event">
-                  <span class="event-name">Dancing with the Sun</span>
-                  <span class="event-location">@ WCH Patio <br></span>
-                  <span class="event-time">6:00 am</span>
-                </div>
-                <div class="event">
-                  <span class="event-name">Breakfast</span>
-                  <span class="event-location">@ Bytes <br></span>
-                  <span class="event-time">6:30 - 8:30 am</span>
-                </div>
-                <div class="event">
-                  <span class="event-name">UCRgis</span>
-                  <span class="event-location">@ Bourns Lawn <br></span>
-                  <span class="event-time">8:00 am</span>
-                </div>
-                <div class="event">
-                  <span class="event-name">Creating a Pitch Deck</span>
-                  <span class="event-location">@ WCH 138 <br></span>
-                  <span class="event-time">10:00 am</span>
-                </div>
-                <div class="event">
-                  <span class="event-name">Lunch</span>
-                  <span class="event-location">@ Bytes <br></span>
-                  <span class="event-time">12:00pm - 2 pm</span>
-                </div>
-                <div class="event">
-                  <span class="event-name">Demos</span>
-                  <span class="event-location">@ TBD <br></span>
-                  <span class="event-time">1:00pm - 3:00 pm</span>
-                </div>
-                <div class="event">
-                  <span class="event-name">Closing Ceremony</span>
-                  <span class="event-location">@ UNLH <br></span>
-                  <span class="event-time">3:00pm - 4:00pm</span>
-                </div>
-
-              </div>
+        <div class="column">
+          <div class="day">
+            Sunday <hr>
+          </div>
+          <div class="schedule">
+            <div class="event">
+              <span class="event-name">Midnight Snack :O </span>
+              <span class="event-location">@ Bytes <br></span>
+              <span class="event-time">12:00 am</span>
             </div>
+            <div class="event">
+              <span class="event-name">Overwatch Tournament</span>
+              <span class="event-location">@ Bourns A265 <div class="ui orange horizontal label">Gigabyte</div> <br></span>
+              <span class="event-time">12:30 - 2 am</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Swag Pinata</span>
+              <span class="event-location">@ TBD <br></span>
+              <span class="event-time">2:00 am</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Dancing with the Sun</span>
+              <span class="event-location">@ WCH Patio <br></span>
+              <span class="event-time">6:00 am</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Breakfast</span>
+              <span class="event-location">@ Bytes <br></span>
+              <span class="event-time">6:30 - 8:30 am</span>
+            </div>
+            <div class="event">
+              <span class="event-name">UCRgis</span>
+              <span class="event-location">@ Bourns Lawn <br></span>
+              <span class="event-time">8:00 am</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Creating a Pitch Deck</span>
+              <span class="event-location">@ WCH 138 <br></span>
+              <span class="event-time">10:00 am</span>
+            </div>
+            <div class="event">
+              <span class="event-name hacking-time">Hacking Ends</span>
+              <span class="event-location">@ WCH <br></span>
+              <span class="event-time">12:00pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Lunch</span>
+              <span class="event-location">@ Bytes <br></span>
+              <span class="event-time">12:00pm - 2 pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Demos</span>
+              <span class="event-location">@ TBD <br></span>
+              <span class="event-time">1:00pm - 3:00 pm</span>
+            </div>
+            <div class="event">
+              <span class="event-name">Closing Ceremony</span>
+              <span class="event-location">@ UNLH <br></span>
+              <span class="event-time">3:00pm - 4:00pm</span>
+            </div>
+
+          </div>
         </div>
-        <div class="fire-section">
-            <img id="fire" frame=1 src="assets/fire.png" alt="Fire">
+      </div>
+      <div class="fire-section">
+        <img id="fire" frame=1 src="assets/fire.png" alt="Fire">
+      </div>
+    </div>
+  </div>
+
+  <div id="speakers">
+    <h2 class="title">Keynote Speakers</h2>
+    <hr>
+    <div class="ui stackable grid">
+
+
+      <div class="eight wide column">
+        <div class="ui card">
+          <a href="http://ayoriselassie.com">
+            <div class="small image">
+              <img src="assets/ayori.jpg">
+            </div>
+          </a>
+          <div class="content">
+            <span class="header">Ayori Selassie</span>
+            <div class="meta">
+              <span class="date">Salesforce</span>
+            </div>
+            <div class="description">
+              AI expert, autodidact and trusted advisor of Fortune 500 companies and startup founders.
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="user icon"></i>
+              Opening Ceremony Speaker
+            </a>
+          </div>
         </div>
+      </div>
+
+      <div class="eight wide column">
+        <div class="ui card">
+          <a href="https://www.linkedin.com/in/tj-sehmi-5963524">
+            <div class="small image">
+              <img src="assets/tj.jpg">
+            </div>
+          </a>
+
+          <div class="content">
+            <span class="header">TJ Sehmi</span>
+            <div class="meta">
+              <span class="date">Appcore Labs</span>
+            </div>
+            <div class="description">
+              Product/project manager, blockchain educator, and expert in inter-cultural motivation.
+            </div>
+          </div>
+          <div class="extra content">
+            <a>
+              <i class="user icon"></i>
+              Closing Ceremony Speaker
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="resources">
+    <h2 class="title">Hacker Resources</h2>
+    <hr>
+    <div class="ui stackable relaxed grid">
+
+      <div class="eight wide column">
+        <h3 class="resource-title">Sponsor Tech</h3>
+        <div class="ui raised segments">
+
+          <div class="ui segment">
+            <a href="https://drive.google.com/file/d/0B1dtcd-Xo9Hyb1JZcWNOOUNtaVlDdnl1UXl6dDhGa05lbzBV/view?usp=sharing" class="resource-main">Free XYZ Domain</a>
+            <p class="resource-desc">Got a cool project you'd like to host on the web? We teamed up with XYZ to provide our hackers with some hip .xyz domains. Follow the instructions linked above to redeem your free domain.</p>
+          </div>
+          <div class="ui segment">
+            <a href="https://www.twilio.com/docs/usage/api" class="resource-main">Twilio API</a>
+            <p class="resource-desc">Is communication important for your project? With Programmable Voice, Programmable Video, and SMS support, give your code a voice with Twilio's API.</p>
+          </div>
+          <div class="ui segment">
+            <a href="https://www.linode.com/api" class="resource-main">Linode API</a>
+            <p class="resource-desc">Automate your servers or develop applications in the cloud with Linode's API.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="eight wide column">
+        <h3 class="resource-title">Datasets</h3>
+        <div class="ui raised segments">
+          <div class="ui segment">
+            <a href="http://betalib.ucr.edu/research-services/databases?search=&format%5B%5D=29&popular=All&subject_specialties=All" class="resource-main">UCR Library Datasets and Statistics</a>
+            <p class="resource-desc">UC Riverside's public datasets. Some datasets are restricted to UCR students. :/</p>
+          </div>
+          <div class="ui segment">
+            <a href="https://riversideca.gov/transparency/data/dataset/list" class="resource-main">Riverside City Data</a>
+            <p class="resource-desc">Data includes fire responses, crime reports, financial data, and more.</p>
+          </div>
+          <div class="ui segment">
+            <p>Bottom</p>
+          </div>
+        </div>
+      </div>
+
+
     </div>
   </div>
 
 
 
 
-  <div class="lead-profiles">
+  <!-- <div class="lead-profiles">
     <div class="leads-title">Leads</div>
     <div class="ui stackable grid container">
       <div class="profile column">
@@ -251,7 +399,7 @@
               </span>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <script src="JS/particles.js/particles.min.js"></script>
   <script src="JS/index.js"></script>
