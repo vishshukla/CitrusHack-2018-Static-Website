@@ -76,7 +76,7 @@ hr {
   margin: 0 auto;
 }
 
-.column {
+.calendar>.column {
   width: 50% !important;
 }
 
@@ -230,6 +230,11 @@ img.fire-anim {
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
     transition-property: transform;
+  text-align: center !important;
+  width: 50%;
+  margin: 25%;
+  margin-bottom: 3%;
+  margin-top: 3%;
 }
 .hvr-grow:hover,
 .hvr-grow:focus,
@@ -237,14 +242,11 @@ img.fire-anim {
     transform: scale(1.1);
 }
 
-.first-tier>a>img {
-  /* margin: 0 auto; */
-  width: 50%;
+.ui.grid {
+  text-align: center !important;
 }
-.second-tier>a>img {
-  /* margin: 0 auto; */
-  width: 50%;
-}
+
+
 
 @-webkit-keyframes AnimationName {
   0%{background-position:0% 50%}
