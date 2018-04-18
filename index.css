@@ -9,12 +9,14 @@ body  {
 
 canvas {
   position: absolute;
-  top: 0;
+  top: 60%;
   height: 250% !important;
+  z-index: 1;
 }
 
 form {
   display: inline;
+  z-index: 999 !important;
 }
 
 button {
@@ -23,11 +25,25 @@ button {
 
 hr {
   width: 40%;
-  margin-bottom: 5%;
+  margin-bottom: 2.5%;
+}
+
+.top-title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 5em;
+  color: white;
+  font-weight: 800;
+  letter-spacing: 3px;
+  padding-top: 5% !important;
+}
+
+.four.wide.column {
+  justify-content: center;
 }
 
 #timer {
-  padding: 5% 0;
+  padding: 3% 0;
   text-align: center;
   color: white;
   font-size: 3.5em;
@@ -35,9 +51,10 @@ hr {
   font-weight: 800;
 }
 
+
 .button-group {
-  text-align: center;
-  margin: 5% 0;
+  justify-content: center;
+  margin: 1% 0 !important;
 }
 
 .calendar {
@@ -89,10 +106,18 @@ hr {
   width: 100%;
 }
 
+.small.image>img:hover {
+  filter: none;
+}
+
 .segments {
   width: 75% !important;
   margin: 0 auto !important;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0,0,0,0.49) !important;
+}
+
+.shadow {
+  text-shadow: 2px 2px 4px black;
 }
 
 #fire {
@@ -122,6 +147,11 @@ hr {
   border: 1px solid white;
 }
 
+.buttons {
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
 .hacking-time {
   text-decoration: underline;
   font-weight: 800;
@@ -129,8 +159,8 @@ hr {
 
 .resource-title {
   font-size: 2em;
-  color: white;
   text-transform: uppercase;
+  color: white;
   letter-spacing: 2px;
   text-align: center;
 }
@@ -138,6 +168,10 @@ hr {
 .resource-main {
   font-size: 1.25em;
   font-weight: 700;
+}
+
+a.resource-main {
+  margin-bottom: 50%;
 }
 
 .leads-profiles {
@@ -177,16 +211,47 @@ hr {
   font-size: 1em;
 }
 
+img.fire-anim {
+  border-radius: 50%;
+  animation: glow 2s infinite alternate;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes glow {
+  from {
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 50%;
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 55%;
+  }
+}
+
 @media only screen and (max-width: 600px) {
     #timer {
-      font-size: 1.2em;
+      font-size: 1.25em;
       font-weight: bolder;
     }
+
     canvas {
       height: 300% !important;
     }
+
     .ui.stackable.grid {
       width: 85% !important;
       margin: 0 auto !important;
     }
+
+    .top-title {
+      font-size: 2.5em;
+      letter-spacing: 1px;
+      padding-top: 10% !important;
+    }
+
+    .button-label {
+      display: none;
+    }
+
+
 }
