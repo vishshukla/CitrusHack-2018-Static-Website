@@ -242,10 +242,6 @@ img.fire-anim {
     transform: scale(1.1);
 }
 
-.ui.grid {
-  text-align: center !important;
-}
-
 
 
 @-webkit-keyframes AnimationName {
