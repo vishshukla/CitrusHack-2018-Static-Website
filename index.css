@@ -217,6 +217,123 @@ img.fire-anim {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+#sponsors {
+  padding-top: 10%;
+}
+
+.hvr-grow {
+  display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+
+.first-tier>a>img {
+  /* margin: 0 auto; */
+  width: 50%;
+}
+.second-tier>a>img {
+  /* margin: 0 auto; */
+  width: 50%;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+/* Small devices */
+@media (min-width:0px) {
+  .banner {
+  padding-top: 100px;
+  }
+
+  .section-heading {
+    font-size: 3em;
+  }
+
+  div>a>img {
+    margin-top: 10%;
+  }
+
+  h1 {
+    font-weight: 100;
+    font-size: 80px;
+  }
+
+  #reg-btn {
+    margin-top: -10px;
+  }
+}
+
+/* Medium devices (tablets) */
+@media (min-width:768px) {
+  h1{
+    font-size: 150px;
+  }
+  #reg-btn{
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+
+  h1 {
+    font-size: 2.5em !important;
+  }
+
+  #date {
+    font-size: 1.5em !important;
+  }
+
+  nav, #mlh-trust-badge {
+    display: none !important;
+  }
+
+  .section-heading {
+    font-size: 2em;
+  }
+
+  #our-organizers {
+    margin-top: 20%;
+  }
+
+  #about, #whatis {
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+  }
+
+  #shibe-h2 {
+    font-size: 2.7em;
+  }
+}
+
+
 @keyframes glow {
   from {
     background-color: rgba(0, 0, 0, 0.8);
