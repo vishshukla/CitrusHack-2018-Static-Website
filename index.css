@@ -10,7 +10,6 @@ canvas {
   position: absolute;
   top: 60%;
   height: 250% !important;
-  z-index: 1;
 }
 
 form {
@@ -100,6 +99,9 @@ hr {
   text-align: right;
 }
 
+.event-location>a {
+  z-index: 999;
+}
 .small.image>img {
   filter: grayscale(100%);
   width: 100%;
