@@ -7,7 +7,7 @@ particlesJS.load('particles-js', 'JS/particles/particles.json', function() {
 
 // TIMER
 
-var hackingStarts = new Date("Apr 21, 2018 09:00:00").getTime();
+var hackingStarts = new Date("Apr 21, 2018 12:00:00").getTime();
 
   setInterval(function() {
     var fireFrame = document.getElementById("fire").getAttribute("frame");
@@ -21,7 +21,7 @@ var hackingStarts = new Date("Apr 21, 2018 09:00:00").getTime();
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
     if(days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
-      var hackingEnds = new Date("Apr 22, 2018 09:00:00").getTime();
+      var hackingEnds = new Date("Apr 22, 2018 12:00:00").getTime();
 
       now = new Date().getTime();
 
